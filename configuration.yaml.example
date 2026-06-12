@@ -1,0 +1,31 @@
+# ============================================================
+# DieseRC 4-Channel eWeLink Relay — Home Assistant config
+# ============================================================
+#
+# Replace YOUR_DEVICE_ID with the 10-character device ID
+# from eWeLink app → Device Info → Device ID
+#
+# Full setup instructions: see README.md
+# ============================================================
+
+sonoff:
+  devices:
+    YOUR_DEVICE_ID:
+      name: "DieseRC 4CH Relay"
+      device_class:
+        - switch: 1   # Relay 1 — rename to match your load
+        - switch: 2   # Relay 2
+        - switch: 3   # Relay 3
+        - switch: 4   # Relay 4
+
+# ---- UIID override (uncomment if device shows wrong channel count) ----
+# sonoff:
+#   devices:
+#     YOUR_DEVICE_ID:
+#       name: "DieseRC 4CH Relay"
+#       extra: { uiid: 7 }
+#       device_class:
+#         - switch: 1
+#         - switch: 2
+#         - switch: 3
+#         - switch: 4

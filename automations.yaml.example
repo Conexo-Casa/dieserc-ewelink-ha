@@ -1,0 +1,56 @@
+# ============================================================
+# DieseRC 4CH Relay — Example Automations
+# ============================================================
+# Copy relevant sections into your automations.yaml
+# Replace entity IDs to match your actual setup
+# ============================================================
+
+# --- Inching / Momentary pulse (e.g. gate trigger) ----------
+- alias: "Relay 1 — Momentary pulse (1 second)"
+  description: "Turns channel 1 on, waits 1 second, turns it off"
+  trigger:
+    - platform: state
+      entity_id: input_button.relay1_trigger
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.dieserc_4ch_relay_1
+    - delay: "00:00:01"
+    - service: switch.turn_off
+      target:
+        entity_id: switch.dieserc_4ch_relay_1
+
+# --- Scheduled on/off (e.g. garden lights) ------------------
+- alias: "Relay 2 — Garden lights ON at sunset"
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "00:00:00"
+  action:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.dieserc_4ch_relay_2
+
+- alias: "Relay 2 — Garden lights OFF at 23:00"
+  trigger:
+    - platform: time
+      at: "23:00:00"
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.dieserc_4ch_relay_2
+
+# --- All channels OFF (e.g. away mode) ----------------------
+- alias: "All relays OFF when leaving home"
+  trigger:
+    - platform: state
+      entity_id: group.all_persons
+      to: "not_home"
+  action:
+    - service: switch.turn_off
+      target:
+        entity_id:
+          - switch.dieserc_4ch_relay_1
+          - switch.dieserc_4ch_relay_2
+          - switch.dieserc_4ch_relay_3
+          - switch.dieserc_4ch_relay_4
