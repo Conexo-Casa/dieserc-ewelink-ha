@@ -1,0 +1,11 @@
+{
+  "title": "DieseRC 4CH eWeLink Relay",
+  "config": {
+    "step": {
+      "user": {
+        "title": "DieseRC 4CH eWeLink Relay",
+        "description": "This integration requires SonoffLAN (AlexxIT/SonoffLAN) installed via HACS and configured with your eWeLink account.\n\nSee the README for full setup instructions."
+      }
+    }
+  }
+}

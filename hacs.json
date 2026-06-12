@@ -1,0 +1,6 @@
+{
+  "name": "DieseRC 4CH eWeLink Relay",
+  "content_in_root": false,
+  "render_readme": true,
+  "homeassistant": "2023.6.0"
+}
