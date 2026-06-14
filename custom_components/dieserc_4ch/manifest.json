@@ -1,12 +1,13 @@
 {
   "domain": "dieserc_4ch",
   "name": "DieseRC 4CH eWeLink Relay",
-  "version": "1.0.0",
-  "documentation": "https://github.com/Conexo-Casa/dieserc-ewelink-ha",
-  "issue_tracker": "https://github.com/Conexo-Casa/dieserc-ewelink-ha/issues",
+  "codeowners": [
+    "@Conexo-Casa"
+  ],
   "dependencies": [],
-  "codeowners": ["@Conexo-Casa"],
-  "requirements": [],
+  "documentation": "https://github.com/Conexo-Casa/dieserc-ewelink-ha",
   "iot_class": "local_push",
-  "config_flow": false
+  "issue_tracker": "https://github.com/Conexo-Casa/dieserc-ewelink-ha/issues",
+  "requirements": [],
+  "version": "1.0.0"
 }
