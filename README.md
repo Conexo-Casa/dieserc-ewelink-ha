@@ -2,7 +2,7 @@
 
 Control your DieseRC 4-Channel WiFi Smart Switch (DC 5V–36V passive dry-contact relay) from
 Home Assistant using the [SonoffLAN](https://github.com/AlexxIT/SonoffLAN) custom integration
-via HACS.
+from the Home Assistant Marketplace (or HACS on older versions).
 
 > **No firmware flashing required.** Works with the original eWeLink firmware over your local
 > network (LAN) and/or the eWeLink cloud.
@@ -26,23 +26,25 @@ via HACS.
 ## Prerequisites
 
 - Home Assistant 2023.6 or newer
-- [HACS](https://hacs.xyz/) installed
+- Home Assistant 2026.11+ (built-in Marketplace), or [HACS](https://hacs.xyz/) on older versions
 - An active **eWeLink account** with the DieseRC device already paired
 - The device and HA on the **same 2.4 GHz Wi-Fi network**
 
 ---
 
-## Step 1 — Install SonoffLAN via HACS
+## Step 1 — Install SonoffLAN
 
-1. Open Home Assistant → **HACS** → **Integrations**
-2. Click **⋮ → Custom repositories**
-3. Add `AlexxIT/SonoffLAN` with category **Integration** (skip if it already appears in search)
-4. Search for **Sonoff** and click **Download**
-5. **Restart Home Assistant**
+SonoffLAN is in the community catalog, so no custom repository is needed.
 
-Or click the badge below if your HA instance is reachable:
+**Home Assistant 2026.11 and newer:** **Settings → Marketplace** → search **Sonoff** →
+**SonoffLAN** → **Install**.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AlexxIT&repository=SonoffLAN&category=Integration)
+**Older versions with HACS:** **HACS → Integrations** → search **Sonoff** → **Download**, then
+restart Home Assistant.
+
+Or click the badge (opens the Marketplace, or HACS on older versions):
+
+[![Open your Home Assistant instance and show this repository.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AlexxIT&repository=SonoffLAN&category=Integration)
 
 ---
 
@@ -184,7 +186,7 @@ For detailed debug logs: **Settings → Devices & Services → Sonoff → Config
 - [SonoffLAN by AlexxIT](https://github.com/AlexxIT/SonoffLAN) — the integration powering this setup
 - [SonoffLAN DEVICES list](https://github.com/AlexxIT/SonoffLAN/blob/master/DEVICES.md) — UIID reference
 - [eWeLink UIID Protocol](https://github.com/CoolKit-Technologies/eWeLink-API/blob/main/en/UIIDProtocol.md)
-- [HACS Installation](https://hacs.xyz/docs/use/download/download/)
+- [Home Assistant Marketplace](https://www.home-assistant.io/integrations/marketplace/)
 
 ---
 
