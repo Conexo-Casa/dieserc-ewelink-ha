@@ -192,4 +192,4 @@ For detailed debug logs: **Settings → Devices & Services → Sonoff → Config
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE)
+MIT — see [LICENSE](LICENSE)
