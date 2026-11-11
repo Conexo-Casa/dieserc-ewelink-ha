@@ -26,7 +26,7 @@ from the Home Assistant Marketplace (or HACS on older versions).
 ## Prerequisites
 
 - Home Assistant 2023.6 or newer
-- Home Assistant 2026.11+ (built-in Marketplace), or [HACS](https://hacs.xyz/) on older versions
+- For installing SonoffLAN: the built-in Marketplace (HA 2026.11+) or [HACS](https://hacs.xyz/) (older versions)
 - An active **eWeLink account** with the DieseRC device already paired
 - The device and HA on the **same 2.4 GHz Wi-Fi network**
 
