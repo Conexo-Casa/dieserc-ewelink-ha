@@ -39,7 +39,7 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
         _LOGGER.warning(
             "SonoffLAN integration ('sonoff' domain) is not loaded. "
             "DieseRC 4CH relay control requires SonoffLAN. "
-            "Install it via HACS: https://github.com/AlexxIT/SonoffLAN"
+            "Install it from Settings → Marketplace (or HACS on older versions): https://github.com/AlexxIT/SonoffLAN"
         )
     else:
         _LOGGER.info(
